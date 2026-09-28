@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>P & R Laundry</title>
+  <style>
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.clients-grid img {
+  max-height: 80px;       /* จำกัดความสูงไม่เกิน 80px */
+  max-width: 150px;       /* จำกัดความกว้างไม่เกิน 150px */
+  object-fit: contain;    /* ทำให้ภาพไม่บิดเบี้ยว */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* เอฟเฟกต์ Hover */
+.clients-grid img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+    body {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f9ff;
+      color: #333;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      height: 80px;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+    nav {
+      background-color: #0066cc;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('machine1.jpg') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .section {
+      padding: 40px;
+      text-align: center;
+    }
+    .section img {
+      width: 300px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    .cta {
+      background-color: #004080;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #0066cc;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="โลโก้ P & R Laundry">
+    <h1>P & R Laundry</h1>
+    <p>สะอาด ปลอดภัย ใส่ใจสิ่งแวดล้อม</p>
+  </header>
+  <nav>
+    <a href="#about">เกี่ยวกับเรา</a>
+    <a href="#services">บริการ</a>
+    <a href="#clients">ลูกค้า</a>
+    <a href="#contact">ติดต่อเรา</a>
+  </nav>
+  <div class="hero">
+    ยกระดับมาตรฐานซักรีดโรงแรมและสปา
+  </div>
+  <div class="section" id="about">
+    <h2>เกี่ยวกับเรา</h2>
+    <p>P & R Laundry เป็นสาขาในพื้นที่พัทยาของ J.S. Laundry Service ซึ่งมีประสบการณ์มากกว่า 14 ปีในธุรกิจซักอบรีดแบบอุตสาหกรรม เราให้บริการแก่กลุ่มธุรกิจโรงแรม สปา ฟิตเนส ร้านอาหาร และเซอร์วิสอพาร์ทเม้นท์ ด้วยมาตรฐานคุณภาพเดียวกับสำนักงานใหญ่ในกรุงเทพฯ
+
+เรามุ่งมั่นในการดูแลผ้าทุกชิ้นด้วยเทคโนโลยีที่ทันสมัยและกระบวนการที่ปลอดภัย เพื่อให้ลูกค้าได้รับผ้าที่สะอาด ปลอดเชื้อ และมีอายุการใช้งานยาวนาน </p>
+  </div>
+  <div class="section" id="services">
+  <h2>บริการของเรา</h2>
+  
+  <!-- รูปเครื่องจักร 3 รูป -->
+  <img src="machine1.jpg" alt="เครื่องจักรซักรีด 1" style="width:250px; margin:10px;">
+  <img src="machine2.jpg" alt="เครื่องจักรซักรีด 2" style="width:250px; margin:10px;">
+  <img src="machine3.jpg" alt="เครื่องจักรซักรีด 3" style="width:250px; margin:10px;">
+  
+ <p>
+P&R Laundry ให้บริการซักอบรีดด้วยเครื่องจักรอุตสาหกรรมที่ทันสมัย เหมาะสำหรับธุรกิจโรงแรม สปา ฟิตเนส คลินิกเสริมความงาม และธุรกิจบริการอื่น ๆ ที่ต้องการความสะอาดและมาตรฐานระดับมืออาชีพ
+</p>
+
+<p>จุดเด่นของเรา: สะอาด ปลอดภัย ใส่ใจสิ่งแวดล้อม</p>
+
+<ul style="list-style:none; text-align:left; max-width:600px; margin:auto;">
+  <li>✅ ควบคุมคุณภาพทุกขั้นตอน</li>
+  <li>✅ เราเลือกใช้ผลิตภัณฑ์จาก Ecolab ที่ได้รับการรับรองด้านความปลอดภัยและประสิทธิภาพ</li>
+  <li>✅ ซักด้วยกระบวนการขจัดคราบน้ำมันสำหรับผ้าสปา</li>
+  <li>✅ แยกประเภทผ้าก่อนซักอย่างละเอียด</li>
+  <li>✅ เน้นความสะอาด ปลอดภัย และเป็นมิตรต่อสิ่งแวดล้อม</li>
+</ul>
+
+</div>
+  <div class="section" id="clients">
+  <h2>ลูกค้าที่ใช้บริการ</h2>
+  <p>โรงแรม รีสอร์ท และสปาชั้นนำในพัทยา ระยอง และเกาะเสม็ด</p>
+
+   <div class="clients-grid">
+    <img src="client1.jpg" alt="Client 1">
+    <img src="client2.jpg" alt="Client 2">
+    <img src="client3.jpg" alt="Client 3">
+    <img src="client4.jpg" alt="Client 4">
+    <img src="client5.jpg" alt="Client 5">
+    <img src="client6.jpg" alt="Client 6">
+    <img src="client7.jpg" alt="Client 7">
+    <img src="client8.jpg" alt="Client 8">
+    <img src="client9.jpg" alt="Client 9">
+    <img src="client10.jpg" alt="Client 10">
+    <img src="client11.png" alt="Client 11">
+  </div>
+</div>
+</div>
+
+  <div class="section" id="contact">
+    <h2>ติดต่อเรา</h2>
+    <p>
+📍 127/17 หมู่ที่ 1 ตำบลห้วยใหญ่  
+อำเภอบางละมุง จังหวัดชลบุรี 20150<br>
+📞 085-351-4141<br>
+✉️ pandrlaundry@gmail.com
+    </p>
+    <a href="mailto:pandrlaundry@gmail.com" class="cta">ส่งข้อความหาเรา</a>
+    <div style="margin-top:20px;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.4402980570144!2d100.93368707485233!3d12.857905487447091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31029584a5f6a9f9%3A0xb4f3422a60055e8a!2sP%20%26%20R%20Laundry!5e1!3m2!1sen!2sth!4v1790586742518!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </div>
+  <footer>
+    © 2026 P & R Laundry. All rights reserved.
+  </footer>
+</body>
+</html>
